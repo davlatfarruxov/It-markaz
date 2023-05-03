@@ -21,10 +21,10 @@
                         <input name="sarlavha" type="text" class="form-control" id="exampleInputUsername1" placeholder="Sarlavha">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Yangilik sarlavhasi</label>
+                        <label for="exampleInputEmail1">Yangilik matni</label>
                         <input name="matn" type="text" class="form-control" id="exampleInputEmail1" placeholder="Matn">
                       </div>
-                      <button  type="submit" class="btn btn-primary mr-2">Submit</button>
+                      <button  type="submit" class="btn btn-primary mr-2">Yuborish</button>
                     </form>
                   </div>
                 </div>
