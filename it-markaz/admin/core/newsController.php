@@ -20,4 +20,9 @@ class Yangilik extends Model
             return 409;
         }
     }
+
+    
+
+
+
 };

@@ -19,8 +19,6 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Yangiliklarni ko'rish</h4>
-                    <p class="card-description"> Kiritilgan yangiliklar...
-                    </p>
                     <div class="table-responsive">
                       <table class="table table-dark">
                         <thead>
@@ -28,6 +26,7 @@
                             <th> # </th>
                             <th> Sarlavha </th>
                             <th> Matn </th>
+                            <th> Amallar </th>
                             <th> Qo'shilgan vaqti </th>
                           </tr>
                         </thead>
@@ -44,6 +43,9 @@
                               </td>
                               <td>
                                 <?=$value['matn']?>
+                              </td>
+                              <td>
+                                <button onclick="deleted(<?=$value['id']?>)" class="btn btn-danger btn-fw">O'chirish</button>
                               </td>
                               <td>
                                 <?=$value['sana']?>
