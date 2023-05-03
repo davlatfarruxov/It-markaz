@@ -1,6 +1,6 @@
 <?php 
 
-define('DB_NAME', "baza");
+define('DB_NAME', "itmarkaz");
 define('DB_HOST', "localhost");
 define('DB_USER', "root");
 define('DB_PASS', "");
