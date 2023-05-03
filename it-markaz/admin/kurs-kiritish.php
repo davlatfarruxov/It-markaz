@@ -15,17 +15,16 @@
                   <div class="card-body">
                     <h4 class="card-title">Kurslar bilan tanishish</h4>
                     <p class="card-description"> Kurslar ro'yxati </p>
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="./send/courseSend.php" method="POST">
                       <div class="form-group">
                         <label for="exampleInputName1">Kurs nomi</label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Nomi">
+                        <input name="nomi" type="text" class="form-control" id="exampleInputName1" placeholder="Nomi">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Kurs matni</label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Matni">
+                        <input name="malumot" type="text" class="form-control" id="exampleInputName1" placeholder="Matni">
                       </div>
                       <button type="submit" class="btn btn-primary mr-2">Yuborish</button>
-                      <button class="btn btn-dark">Tozalash</button>
                     </form>
                   </div>
                 </div>
