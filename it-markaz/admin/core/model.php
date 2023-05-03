@@ -35,7 +35,7 @@ class Model
     }
     public function delete($id)
     {
-        $sql = "DELETE FROM ".$this ->table ."WHERE id=".$id;
+        $sql = "DELETE FROM ".$this ->table ." WHERE id=".$id;
         return mysqli_query($this->db, $sql);
     }
 
