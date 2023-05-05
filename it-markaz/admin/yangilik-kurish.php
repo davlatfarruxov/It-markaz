@@ -39,13 +39,16 @@
                                 <?=$value['id']?>
                               </td>
                               <td>
-                                <?=$value['sarlavha']?>
+                                <?php echo implode(' ', array_slice(explode(' ', $value['sarlavha']), 0, 7))."..."?>
                               </td>
-                              <td>
-                                <?=$value['matn']?>
+                              <td style="width: 150px;">
+                                <?php echo implode(' ', array_slice(explode(' ', $value['matn']), 0, 5))."...";?>
                               </td>
                               <td>
                                 <button onclick="deleted(<?=$value['id']?>)" class="btn btn-danger btn-fw">O'chirish</button>
+                                <a href="newsUpdate.php?id=<?=$value['id']?>">
+                                  <button class="ml-3 btn btn-success btn-fw">Tahrirlash</button>
+                                </a>
                               </td>
                               <td>
                                 <?=$value['sana']?>
@@ -62,10 +65,19 @@
               </div>
             </div>
           </div>
-            <?php include_once './main/footer.php'?>
+            
+            
+            <?php include_once 'main/footer.php'?>
         </div>
       </div>
     </div>
-    <?php include_once './script/script.php' ?>
+    <?php include_once 'script/script.php' ?>
+    <script>
+              function deleted(id) {
+                if (confirm("O'chirishni tasdiqlang!")==true) {
+                  window.location.href = "delete/deleteNews.php?id="+id;
+                }
+              }
+      </script>
   </body>
 </html>

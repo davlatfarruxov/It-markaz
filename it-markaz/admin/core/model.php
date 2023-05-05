@@ -27,7 +27,7 @@ class Model
         $back = mysqli_query($this->db, $sql);
         return mysqli_fetch_all($back, MYSQLI_ASSOC);
     }
-    public function selectOne ()
+    public function selectOne ($id)
     {
         $sql = "SELECT * FROM ".$this->table." WHERE id=".$id;
         $back = mysqli_query($this->db, $sql);
