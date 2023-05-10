@@ -78,7 +78,7 @@
                                                </li>
 
                                                <li class="menu-item-has-children">
-                                                   <a href="/contact.php">Rezidentlikga Ariza</a>    
+                                                   <a href="contact.php">Rezidentlikga Ariza</a>    
                                                </li>
                                            </ul> <!-- //.nav-menu -->
                                         </nav>                                         

@@ -339,96 +339,38 @@
                         <div class="sub-title primary">Yangiliklar </div>
                         <h2 class="title mb-0">So'nggi yangiliklar</h2>
                     </div>
+                    <?php
+                        require_once "admin/core/newsController.php";
+                        $obj = new Yangilik();
+                        $news = $obj->select();
+                    ?>
                     <div class="row">
-                        <div class="col-lg-7 pr-60 md-pr-15 md-mb-30">
-                            <div class="row no-gutter white-bg blog-item mb-35">
-                                <div class="col-md-6">
-                                    <div class="image-part">
-                                        <a href="#"><img src="assets/images/blog/style3/1.jpg" alt=""></a>
+                        <div class="col-lg-11 pr-60 md-pr-15 md-mb-30">
+                            <?php
+                                foreach($news as $key => $val){
+                            ?>
+                                <div class="row no-gutter white-bg blog-item">                                
+                                    <div class="col-md-4 order-last">
+                                        <div class="image-part">
+                                            <a href="yangilik.php?id=<?=$val['id']?>"><img src="assets/images/blog/style3/2.jpg" alt=""></a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="blog-content">
-                                        <ul class="blog-meta">
-                                            <li><i class="fa fa-user-o"></i> Admin</li>
-                                            <li><i class="fa fa-calendar"></i>Mart 15, 2023</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog-single.html">SamDU IT MARKAZI ochildi </a></h3>
-                                        <div class="btn-part">
-                                            <a class="readon-arrow" href="#">Ko'proq</a>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <ul class="blog-meta">
+                                                <li><i class="fa fa-user-o"></i> Admin</li>
+                                                <li><i class="fa fa-calendar"></i><?=$val['sana']?></li>
+                                            </ul>
+                                            
+                                            <h3 class="title"><a href="yangilik.php?id=<?=$val['id']?>"><?=$val['sarlavha']?></a></h3>
+                                            <div class="btn-part">
+                                                <a class="readon-arrow" href="yangilik.php?id=<?=$val['id']?>">Ko'proq</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row no-gutter white-bg blog-item">                                
-                                <div class="col-md-6 order-last">
-                                    <div class="image-part">
-                                        <a href="#"><img src="assets/images/blog/style3/2.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="blog-content">
-                                        <ul class="blog-meta">
-                                            <li><i class="fa fa-user-o"></i> Admin</li>
-                                            <li><i class="fa fa-calendar"></i>Aprel 15, 2023</li>
-                                        </ul>
-                                        <h3 class="title"><a href="blog-single.html">Startar tanlovi g'oliblari e'lon qilindi</a></h3>
-                                        <div class="btn-part">
-                                            <a class="readon-arrow" href="#">Ko'proq</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 lg-pl-0">
-                            <div class="events-short mb-28">
-                                <div class="date-part bgc1">
-                                    <span class="month">Aprel</span>
-                                    <div class="date">20</div>
-                                </div>
-                                <div class="content-part">
-                                    <div class="categorie">
-                                        <a href="#">Dasturlash</a>
-                                    </div>
-                                    <h4 class="title mb-0"><a href="#   ">Hozirda eng mashhur dasturlash tillari haqida seminar-trening bo'lib o'tdi</a></h4>
-                                </div>
-                            </div>
-                            <div class="events-short mb-28">
-                                <div class="date-part bgc2">
-                                    <span class="month">Aprel</span>
-                                    <div class="date">21</div>
-                                </div>
-                                <div class="content-part">
-                                    <div class="categorie">
-                                        <a href="#">Yangiliklar</a>
-                                    </div>
-                                    <h4 class="title mb-0"><a href="#">AKT vaziri IT Markazga tashrif buyurdi va yaratilgan sharoitlar bilan tanishdi</a></h4>
-                                </div>
-                            </div>
-                            <div class="events-short mb-28">
-                                <div class="date-part bgc3">
-                                    <span class="month">Aprel</span>
-                                    <div class="date">22</div>
-                                </div>
-                                <div class="content-part">
-                                    <div class="categorie">
-                                        <a href="#">Dasturlash</a>
-                                    </div>
-                                    <h4 class="title mb-0"><a href="#">Zamonaviy kasblarni o'rganish uchun kurslar ochildi</a></h4>
-                                </div>
-                            </div>
-                            <div class="events-short">
-                                <div class="date-part bgc4">
-                                    <span class="month">Aprel</span>
-                                    <div class="date">23</div>
-                                </div>
-                                <div class="content-part">
-                                    <div class="categorie">
-                                        <a href="#">Dasturlash</a>
-                                    </div>
-                                    <h4 class="title mb-0"><a href="#">Sun'iy Intellekt va Grafik Dizayn kurslari ochildi</a></h4>
-                                </div>
-                            </div>
+                                <br>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

@@ -35,12 +35,12 @@ include_once './main/header.php';
 
     <!--Preloader area start here-->
     <div id="loader" class="loader">
-        <div class="loader-container">
-            <div class='loader-icon'>
-                <img src="assets/images/pre-logo.png" alt="">
+            <div class="loader-container">
+                <div class='loader-icon'>
+                    <img src="assets/images/pre-logo.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
     <div class="main-content">
         <div class="contact-page-section pt-100 pb-100 md-pt-70 md-pb-70">
             <div class="container">
