@@ -6,7 +6,7 @@ if (isset($_POST)) {
         ?>
         <script>
             alert("Ro'yxatdan o'tish muvaffaqqiyatli yakunlandi!");
-            window.location.href = "../index.php";
+            window.location.href = "../../index.php";
         </script>
         <?php
     } else {
