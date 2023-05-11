@@ -1,9 +1,13 @@
 <?php include_once './main/head.php' ?>
+<<<<<<< HEAD
 <?php include_once './core/courseController.php'?>
 <?php
   $obj = new Kurs();
   $kurs = $obj->select();
 ?>
+=======
+<?php include_once './ximoya.php'; ?>
+>>>>>>> 5900dcc5ccbc2b961c77615583e7eef2ec21d69e
   <body>
     <div class="container-scroller">
       <?php include_once './main/sidebar.php' ?>
