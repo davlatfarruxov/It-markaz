@@ -44,3 +44,8 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
+    <style>
+        .full-width-header.header-style2.modify1 .rs-header .menu-area{
+            background-color: #273c66 !important;
+        }
+    </style>

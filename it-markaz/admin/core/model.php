@@ -38,6 +38,7 @@ class Model
         $sql = "DELETE FROM ".$this ->table ." WHERE id=".$id;
         return mysqli_query($this->db, $sql);
     }
+    
 
 }
 ?>  

@@ -150,92 +150,43 @@
                         <div class="sub-title primary">Kurslar</div>
                         <h2 class="title mb-0">Bizning kurslar</h2>
                     </div>
+                    <?php
+                        require_once "admin/core/courseController.php";
+                        $obj = new Kurs();
+                        $sql = "SELECT * FROM kurs ORDER BY id DESC LIMIT 3";
+
+                        $back = mysqli_query($obj->db, $sql);
+
+                        $course = mysqli_fetch_all($back, MYSQLI_ASSOC);
+                    ?>
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="course-wrap">
-                                <div class="front-part">
-                                    <div class="img-part">
-                                        <img src="assets/images/courses/style2/1.png" alt="">
+                        <?php
+                            foreach($course as $key => $val){
+                        ?>
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="course-wrap">
+                                    <div class="front-part">
+                                        <div class="img-part">
+                                            <a href="course.php?id=<?=$val['id']?>"><img src="assets/images/courses/style2/1.png" alt=""></a>
+                                        </div>
+                                        <div class="content-part">
+                                            <h4 class="title"><a href="course.php?id=<?=$val['id']?>"><?=$val['nomi']?></a></h4>
+                                            <a class="categorie" href="course.php?id=<?=$val['id']?>"><?=$val['malumot']?></a>
+                                        </div>
                                     </div>
-                                    <div class="content-part">
-                                        <h4 class="title"><a href="course-single.html">Back-end</a></h4>
-                                        <a class="categorie" href="#">PHPda Backend Dasturlash</a>
-                                    </div>
-                                </div>
-                                <div class="inner-part">
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Back-end</a>
-                                        <h4 class="title"><a href="course-single.html">PHPda Backend Web Dasturlash</a></h4>
-                                        <ul class="course-meta">
-                                            <li class="course-user"><i class="fa fa-user"></i> 25</li>
-                                            <li class="ratings">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                        </ul>
+                                    <div class="inner-part">
+                                        <div class="content-part">
+                                            <a class="categorie" href="course.php?id=<?=$val['id']?>"><?=$val['nomi']?></a>
+                                            <h4 class="title"><a class="categorie" href="course.php?id=<?=$val['id']?>"><?=$val['malumot']?></a></h4>
+                                            <div class="btn-part">
+                                                <a class="readon-arrow" href="course.php?id=<?=$val['id']?>">Ko'proq</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="course-wrap">
-                                <div class="front-part">
-                                    <div class="img-part">
-                                        <img src="assets/images/courses/style2/2.png" alt="">
-                                    </div>
-                                    <div class="content-part">
-                                        <h4 class="title"><a href="#">Full Stack </a></h4>
-                                        <a class="categorie" href="#"> Frontend & Backend</a>
-                                    </div>
-                                </div>
-                                <div class="inner-part">
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Full Stack</a>
-                                        <h4 class="title"><a href="course-single.html">Frontend & Backend</a></h4>
-                                        <ul class="course-meta">
-                                            <li class="course-user"><i class="fa fa-user"></i> 35</li>
-                                            <li class="ratings">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="course-wrap">
-                                <div class="front-part">
-                                    <div class="img-part">
-                                        <img src="assets/images/courses/style2/3.png" alt="">
-                                    </div>
-                                    <div class="content-part">
-                                        <h4 class="title"><a href="course-single.html">Algoritmlash</a></h4>
-                                        <a class="categorie" href="#">Sport Dasturlash</a>
-                                    </div>
-                                </div>
-                                <div class="inner-part">
-                                    <div class="content-part">
-                                    <a class="categorie" href="#">Algoritmlash</a>
-                                        <h4 class="title"><a href="course-single.html">Sport Dasturlash</a></h4>
-                                        <ul class="course-meta">
-                                            <li class="course-user"><i class="fa fa-user"></i> 29</li>
-                                            <li class="ratings">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
+                        <?php } ?>
+                        
                         <!-- <div class="col-lg-4 col-md-6 mb-30">
                             <div class="course-wrap">
                                 <div class="front-part">
@@ -323,6 +274,7 @@
                                 
                             </div>
                         </div> -->
+                        <!-- <a href="./course.php"> <button> Yana...</button> </a> -->
                     </div>
                     <!-- <div class="btn-part text-center mt-30">
                         <a class="readon3 dark-hov" href="#">View All Courses</a>

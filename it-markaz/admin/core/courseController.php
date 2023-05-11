@@ -20,4 +20,17 @@ class Kurs extends Model
             return 409;
         }
     }
+    public function update($arr)
+    {
+        foreach($arr as $key => $value){
+            $$key = $this->filtr($value);
+        }
+        $sql = "UPDATE ".$this->table." SET nomi='$nomi', malumot='$malumot' WHERE id=".$id;
+        
+        if ($this->query($sql)) {
+            return 200;
+        }else {
+            return 409;
+        }
+    }
 };

@@ -65,12 +65,7 @@
                                                </li>
 
                                                <li class="menu-item-has-children">
-                                                   <a href="#kurslar">Kurslar</a>
-                                                   <ul class="sub-menu">
-                                                       <li><a href="#kurslar">Backend</a> </li>
-                                                       <li><a href="#kurslar">Full Stack</a> </li>
-                                                       <li><a href="#kurslar">Algoritmlash</a> </li>
-                                                   </ul>
+                                                   <a href="./course.php">Kurslar</a>
                                                </li>
 
                                                <li class="menu-item-has-children">
