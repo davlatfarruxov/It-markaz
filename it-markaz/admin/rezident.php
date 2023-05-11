@@ -1,5 +1,6 @@
 <?php include_once './main/head.php' ?>
 <?php include_once 'core/residentController.php' ?>
+<?php include_once './ximoya.php'; ?>
 <?php
 $obj = new Resident();
 $rezident = $obj->select();

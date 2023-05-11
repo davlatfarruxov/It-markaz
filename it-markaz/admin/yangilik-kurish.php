@@ -1,5 +1,6 @@
 <?php include_once './main/head.php' ?>
 <?php include_once './core/newsController.php'?>
+
 <?php
   $obj = new Yangilik();
   $yangilik = $obj->select();

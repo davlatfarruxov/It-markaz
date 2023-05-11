@@ -1,5 +1,6 @@
 <?php
     include_once './main/head.php';
+   
 ?>
 <?php
     include_once './main/header.php';

@@ -12,9 +12,9 @@ class User extends Model
         }
         $parol = md5($parol);
 
-        $sql = "INSERT INTO " . $this->table . " (name,login,parol) VALUES ('$fio','$login','$parol')";
+        $sql = "INSERT INTO " . $this->table . " (`name`,`login`,`parol`) VALUES ('$fio','$login','$parol')";
 
-        if ($fio == ""  $login == ""  $parol == "") {
+        if ($fio == "" || $login == ""||  $parol == "") {
             return 409;
         }
         if ($this->query($sql)) {

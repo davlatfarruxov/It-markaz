@@ -154,16 +154,17 @@ button{
 </head>
 <body>
     
-    <form>
+    <form action="send/userCheck.php" method="POST" >
         <h3>Login</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
+        <input name="login" type="text" placeholder="Email or Phone" id="username">
+        <input type="hidden" name="_crf" value="<?=$_SESSION['_crf']?>">
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
+        <input name="parol" type="password" placeholder="Password" id="password">
 
-        <button>Log In</button>
+        <button type="submit" href="./index.php">Log In</button>
     </form>
 </body>
 </html>

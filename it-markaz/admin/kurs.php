@@ -1,5 +1,5 @@
 <?php include_once './main/head.php' ?>
-
+<?php include_once './ximoya.php'; ?>
   <body>
     <div class="container-scroller">
       <?php include_once './main/sidebar.php' ?>
