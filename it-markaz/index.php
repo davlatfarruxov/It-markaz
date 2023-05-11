@@ -30,7 +30,7 @@
                                 <h1 class="banner-title white-color wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="3000ms">Samarqand Davlat Universiteti </br> IT Markazi</h1>
                                 <div class="banner-desc white-color wow fadeInRight" data-wow-delay="500ms" data-wow-duration="4000ms"></div>
                                 <ul class="banner-btn wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms">
-                                    <li><a class="readon3 active" href="/contact">Rezidentlikga ariza</a></li>
+                                    <li><a class="readon3 active" href="contact.php">Rezidentlikga ariza</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -125,20 +125,6 @@
                                 
                             </div>
                         </div>
-                        <!-- <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="subject-wrap bgc5">
-                                <img src="assets/images/subject/icons/5.png" alt="">
-                                <h4 class="title"><a href="#">Grafik Dizayn</a></h4>
-                                <span class="course-qnty">05 Kurs</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="subject-wrap bgc6">
-                                <img src="assets/images/subject/icons/6.png" alt="">
-                                <h4 class="title"><a href="#">Algoritmlash</a></h4>
-                                <span class="course-qnty">05 Kurs</span>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -187,99 +173,7 @@
                                 </div>
                             </div>
                         <?php } ?>
-                        
-                        <!-- <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="course-wrap">
-                                <div class="front-part">
-                                    <div class="img-part">
-                                        <img src="assets/images/courses/style2/4.png" alt="">
-                                    </div>
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Web Dizayn</a>
-                                        <h4 class="title"><a href="course-single.html">Figma Kursi</a></h4>
-                                    </div>
-                                </div>
-                                <div class="inner-part">
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Web Dizayn</a>
-                                        <h4 class="title"><a href="course-single.html">Figma Kursi</a></h4>
-                                        <ul class="course-meta">
-                                            <li class="course-user"><i class="fa fa-user"></i> 245</li>
-                                            <li class="ratings">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                (05)
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="course-wrap">
-                                <div class="front-part">
-                                    <div class="img-part">
-                                        <img src="assets/images/courses/style2/5.png" alt="">
-                                    </div>
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Web Development</a>
-                                        <h4 class="title"><a href="course-single.html">Your Complete Guide to Dark Photography</a></h4>
-                                    </div>
-                                </div>
-                                <div class="inner-part">
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Web Development</a>
-                                        <h4 class="title"><a href="course-single.html">Your Complete Guide to Dark Photography</a></h4>
-                                        <ul class="course-meta">
-                                            <li class="course-user"><i class="fa fa-user"></i> 245</li>
-                                            <li class="ratings">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                (05)
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-30">
-                            <div class="course-wrap">
-                                <div class="front-part">
-                                    <div class="img-part">
-                                        <img src="assets/images/courses/style2/6.png" alt="">
-                                    </div>
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Web Development</a>
-                                        <h4 class="title"><a href="course-single.html">From Zero to Hero with Advance Nodejs</a></h4>
-                                    </div>
-                                </div>
-                                <div class="inner-part">
-                                    <div class="content-part">
-                                        <a class="categorie" href="#">Web Development</a>
-                                        <h4 class="title"><a href="course-single.html">From Zero to Hero with Advance Nodejs</a></h4>
-                                        <ul class="course-meta">
-                                            <li class="course-user"><i class="fa fa-user"></i> 245</li>
-                                            <li class="ratings">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                (05)
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>  
-                                
-                            </div>
-                        </div> -->
-                        <!-- <a href="./course.php"> <button> Yana...</button> </a> -->
                     </div>
-                    <!-- <div class="btn-part text-center mt-30">
-                        <a class="readon3 dark-hov" href="#">View All Courses</a>
-                    </div> -->
                 </div>
             </div>
             <!-- Popular Course Section End -->
