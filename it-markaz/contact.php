@@ -29,6 +29,11 @@ include_once './main/header.php';
     #contact-form {
         margin-top: 180px;
     }
+
+        .full-width-header.header-style2.modify1 .rs-header .menu-area{
+            background-color: #fff !important;
+        }
+   
 </style>
 
 <body class="home-style3">

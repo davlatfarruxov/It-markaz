@@ -12,6 +12,37 @@
   $obj = new Kurs();
   $kurs = $obj->select();
 ?>
+<style>
+    .full-width-header.header-style2.modify1 .rs-header .menu-area.sticky {
+        background: #fff !important;
+    }
+
+    .full-width-header.header-style2.modify1 .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu>li>a {
+        color: #111111;
+
+    }
+
+    .full-width-header.header-style2.modify1 .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
+        color: #111111;
+    }
+
+    .menu-area {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-send {
+        background-color: #21a7d0 !important;
+    }
+
+    #contact-form {
+        margin-top: 180px;
+    }
+
+        .full-width-header.header-style2.modify1 .rs-header .menu-area{
+            background-color: #fff !important;
+        }
+   
+</style>
     <body class="home-style3">
         
         <div id="loader" class="loader">
