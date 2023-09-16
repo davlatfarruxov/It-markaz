@@ -17,8 +17,6 @@
         </div>
         <!--Preloader area End here-->
 
-
-
 		<!-- Main content Start -->
         <div class="main-content">
             <!-- Banner Section Start -->
